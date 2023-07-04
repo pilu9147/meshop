@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #000;
+  padding: 0 20px;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between !important;
+}
+.log {
+  margin-left: 20px;
+}
+.nav-items a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+#profile {
+  background-color: #f2f2f2;
+  padding: 2px 4px;
+  color: #000;
+  border-radius: 3px;
+}
+
+/* ----------------------------------- main  --------------------------------------- */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+}
+.main .sidebar {
+  background-color: #000;
+  color: #fff;
+  width: 330px;
+  height: calc(96.5vh - 100px) !important;
+  overflow-y: scroll;
+  padding: 20px 15px;
+}
+.addedcar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.sidebar h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.addedcartitem,
+.final {
+  margin-bottom: 6px;
+  display: flex;
+  color: #f1f1f1;
+  justify-content: space-between;
+}
+
+#check-btn {
+  color: #000;
+  background-color: #f1f1f1;
+  padding: 10px 30px;
+  margin-top: 15px !important;
+  margin-left: 45px;
+}
+#check-btn:hover {
+  color: #f1f1f1;
+  background-color: black;
+  border: 3px solid white;
+}
+.final {
+  margin-top: 8px;
+}
+/* 
+ -------------------------------------   cards   ----------------------------- */
+.main {
+  height: 80vh;
+}
+#items-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow-y: scroll;
+}
+#items-cont .card {
+  border: 1px solid black;
+  object-fit: cover;
+  width: 315px;
+  height: 450px;
+  background-color: #f1f1f1;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card > img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 312px;
+  height: 230px;
+  border-bottom: 1px solid black;
+}
+.card .content .cont {
+  padding: 5px 15px;
+}
+.card .content .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cont .titles {
+  letter-spacing: 1.8;
+  line-height: 1.4;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 80px;
+}
+.prflx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color,
+.prices {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sub-div .rating,
+.sub-div .size {
+  text-align: center;
+  font-size: 16px;
+  background-color: #000;
+  color: white;
+  font-weight: 400;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.add-cart {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.add-cart {
+  height: 40px;
+}
+.addToCart {
+  background-color: rgb(182, 141, 64);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0px 5px;
+  height: 40px;
+  display: none;
+  border-top: 1px solid black;
+}
+.car {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#heading {
+  text-align: center !important;
+  font-size: 40px;
+}
+#menu {
+  border: 1px solid black;
+  padding: 7px;
+  margin-left: 5px;
+  border-radius: 8px;
+  display: none;
+}
+
+@media (min-width: 330px) and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .sidebar {
+    display: none;
+    width: 100%;
+  }
+  .nav {
+    padding: 0px 10px;
+  }
+  #menu {
+    display: block;
+  }
+  .sidebar.sidebar-visible {
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 120px;
+    left: 50px;
+    bottom: 0;
+    z-index: 9999;
+    height: 400px !important;
+  }
+  #items-cont {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+  }
+  .card > img {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    width: 312px;
+    height: 230px !important;
+    border-bottom: 1px solid black;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .add-cart,
+  .addToCart {
+    border-radius: 0;
+  }
+  #heading {
+    text-align: center;
+    font-size: 20px;
+  }
+  .add-cart {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  .nav-items a {
+    margin-left: 13px !important;
+    margin-right: 0px !important;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  #profile {
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 400px) {
+  .sidebar.sidebar-visible {
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 120px;
+    left: 30px;
+    bottom: 0;
+    z-index: 9999;
+    height: 400px !important;
+  }
+  .nav-items a {
+    margin-left: 13px !important;
+    margin-right: 0px !important;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  #profile {
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+  }
+}

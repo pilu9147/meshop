@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mycart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../logo.jpeg" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">MeShop.</div>
+        <div class="nav-items">
+            <a href="/shop/">Home</a>
+            <a href="/mycart/">My Cart</a>
+            <a id="profile" href="/profile/"></a>
+        </div>
+    </div>
+    <div class="car">
+        <h2 id="heading">My Cart</h2>
+        <i class="material-icons" id="menu">shopping_cart</i>
+    </div>
+
+    <div class="main">
+
+        <div id="items-cont"> </div>
+
+
+        <div class="sidebar">
+            <h3>Checkout List</h3>
+
+
+            <div class="cartitems">
+                <div class="addedcar">
+                    <div class="ca">qtt</div>
+                    <div class="qt">catagory</div>
+                    <div class="pr">price</div>
+                </div>
+            </div>
+            <hr>
+            <div class="final">
+                <div class="ttl">Total</div>
+                <div class="ttlprc"></div>
+            </div>
+            <hr>
+            <div class="button">
+                <button type="submit" id="check-btn">Click to CheckOut</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

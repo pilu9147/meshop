@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+
+        <div class="logo">MeShop.</div>
+        <div class="nav-items">
+            <a href="">Home</a>
+            <a href="/mycart/">My Cart</a>
+            <a id="profile" href="/profile/"></a>
+            <button id="sidebar-toggle">Toggle Sidebar</button>
+            
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="sidebar">
+         <hr>
+           <div class="colors">
+               <h3 class="color-head">Colors</h3>
+               <div id="colordiv" class="range">
+                   <input type="checkbox" class="color-sb" value="red">  Red <br>
+                   <input type="checkbox" class="color-sb" value="blue">  Blue <br>
+                   <input type="checkbox" class="color-sb" value="coral"> coral <br>
+                   <input type="checkbox" class="color-sb" value="green">  green <br>
+                   <input type="checkbox" class="color-sb" value="purple">  purple <br>
+               </div>
+               
+              
+           </div>
+            <hr>
+            <div class="sizes">
+               <h3 class="size-head">Sizes</h3>
+               <div class="range">
+                   <input type="checkbox" class="size" value="S">  S <br>
+                   <input type="checkbox" class="size" value="M">  M <br>
+                   <input type="checkbox" class="size" value="L">  L <br>
+                   <input type="checkbox" class="size" value="XL">  XL <br>
+               </div>
+             
+            </div>
+          <hr>
+
+          <div class="slidecontainer">
+           <h3>Rating</h3>
+           <input type="range" min="1" max="5" value="50" id="myRange" step="0.1">
+         </div>
+
+        <hr>
+        <div class="price">
+          <h3 class="slider">Price Range</h3>
+          <div class="range">
+           <input type="checkbox" class="prc" value="0-25">  $0-$25 <br>
+           <input type="checkbox" class="prc" value="25-50">  $25-$50 <br>
+           <input type="checkbox" class="prc" value="50-100">  $50-$100 <br>
+           <input type="checkbox" class="prc" value="100-200">  $100 onwards <br>
+
+          </div>
+         
+        </div>
+         
+        <div class="button">
+           <button type="submit" id="filter-btn">Apply Filter</button>
+        </div>
+        </div>
+
+
+        <!-- ----------------------      input + cards   ---------------------- -->
+
+       <div class="right">
+       <div class="sea">
+           <input type="text" id="item-search" placeholder="Search">
+           <i class="material-icons" id="menu">sort</i>
+       </div>
+        <div class="filter-catogory">
+            <button type="button" class="btns" id="all">All</button>
+            <button type="button" class="btns" id="mens">Mens</button>
+            <button type="button" class="btns" id="womens">Womens</button>
+            <button type="button" class="btns" id="jewel">Jewellery</button>
+            <button type="button" class="btns" id="elect">Electronics</button>
+        </div>
+<!-- 
+     -------------------------------   Cards    ---------------------------------- -->
+     
+     <div class="categort-heading" id="wmh">womens Clothing</div>
+     <div class="items-cont" id="women"> </div>
+     
+     <div class="categort-heading" id="mnh">Mens Clothing</div>
+     <div class="items-cont" id="men"></div>
+     
+     <div class="categort-heading" id="jwh">Jewellery</div>
+     <div class="items-cont" id="jwelry"></div>
+
+     <div class="categort-heading" id="eth">Electronics</div>
+     <div class="items-cont" id="Electronics"></div>
+
+
+
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

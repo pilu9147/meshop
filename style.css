@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh !important;
+}
+.grid {
+  width: 1005;
+}
+.nav {
+  width: 100% !important;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #000;
+  padding: 0 20px;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.nav-items a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+.main {
+  width: 100vw;
+  padding: 30px 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+}
+
+/* landing img ------------------------------------- */
+.merged {
+  padding-top: 40px;
+  grid-row: span 2;
+}
+.img-lend > img {
+  height: 607px;
+  width: 900px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* item card   ------------------------------------------ */
+.card-con .card {
+  object-fit: cover;
+  width: 350px;
+  height: 410px;
+  background-color: #f1f1f1;
+  margin: 10px auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card > img {
+  width: 350px;
+  height: 250px;
+  border-bottom: 1px solid black;
+}
+.card .content .cont {
+  padding: 5px 15px;
+}
+.card .content .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cont .title {
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.prflx {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  background-color: #000;
+  color: white;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.rating {
+  background-color: #000;
+  color: white;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#add-cart {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  color: white;
+  background-color: black;
+}
+
+/* login   ------------------------------------ */
+.login {
+  margin-top: 40px !important;
+  background-color: aquamarine;
+  width: 350px;
+  background-color: #f1f1f1;
+  margin: 10px auto;
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#log {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  font-size: 50px;
+}
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  margin: 20px auto;
+}
+.btn {
+  color: #fff;
+  background-color: black;
+  padding: 8px 50px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-items a {
+    margin: 0 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .merged {
+    grid-row: auto;
+    padding-top: 5px;
+  }
+
+  .img-lend > img {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-con .card {
+    width: 100%;
+  }
+
+  .card > img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .btn-div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+  .card-con .card {
+    height: auto;
+  }
+  .card .content .cont {
+    height: 150px;
+  }
+}

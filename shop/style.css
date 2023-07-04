@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #000 !important;
+    padding: 0 20px;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between !important;
+}
+.nav-items a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+#profile {
+  background-color: #f2f2f2;
+  padding: 2px 4px;
+  color: #000;
+  border-radius: 3px;
+}
+
+.btn {
+    color: #fff;
+    background-color: black;
+    padding: 8px 40px;
+    margin-top: 10px;
+}
+
+.categort-heading {
+  font-size: 25px;
+  font-weight: 500px;
+}
+   /* sidebar        ---------------------------------------------- */
+ .main{
+        display: flex;
+     }
+.main .sidebar {
+        background-color: #000;
+        color: #fff;
+        width: 220px;
+        height: calc(100vh - 50px) !important;
+        
+     }
+.colors, .sizes ,.slidecontainer, .price, .button {
+    margin-left: 20px ;
+}
+.sidebar h3 {
+    margin: 10px 0;
+}
+.range input {
+    margin: 10px 0;
+}
+#filter-btn {
+    color: black;
+    background-color: #fff;
+    padding: 8px 40px;
+    margin-top: 10px;
+}
+#myRange {
+    accent-color: #fff;
+    background-color: #fff;
+    outline: none;
+
+}
+
+/* ------------------------------------------------  search filter cards ------------ */
+
+.right {
+    height: calc(100vh - 50px);
+    width: calc(100vw - 220px);
+    padding: 10px;
+    overflow-y: scroll;
+}
+.filter-catogory {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sea {
+  display: flex;
+  align-items: center;
+}
+#menu {
+  border: 1px solid black;
+  padding: 7px;
+  margin-left: 5px;
+  border-radius: 8px ;
+  display: none;
+}
+
+#item-search{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btns {
+    color: black;
+    background-color: white;
+    padding: 8px 90px;
+    border-radius: 10px;
+}
+.btns:hover {
+    color: #fff;
+    background-color:black;
+}
+#sidebar-toggle {
+  display: none;
+}
+
+/* -----------------------------------------    cardss ---------------------------- */
+
+.items-cont {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+  
+}
+.items-cont .card {
+    border: 1px solid black;
+    object-fit: cover;
+    width: 280px;
+    height: auto;
+    background-color: #f1f1f1;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .card > img {
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 277px;
+    height: 230px;
+    border-bottom: 1px solid black;
+  }
+  .card .content .cont {
+    padding: 5px 15px;
+  }
+  .card .content .title {
+    font-size : 18px;
+    font-weight: 400;
+  }
+  .cont .titles {
+    letter-spacing: 1.8;
+    line-height: 1.4;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height:80px;
+  }
+  .prflx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .color , .prices {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .sub-div .rating,.sub-div .size{
+         text-align: center;
+         font-size: 16px;
+         background-color: #000;
+         color: white;
+         font-weight: 400;
+         width: 30px;
+         border-radius: 2px;
+  }
+
+  .add-cart {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 45px;
+  }
+  .add-cart:hover {
+    background-color: #333;
+  }
+  .addToCart {
+    background-color: rgb(119, 119, 78); 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 5px;
+    height: 45px;
+    display: none;
+    border-top: 1px solid black;
+  }
+  .add , .remove {
+    background-color: rgb(237, 226, 226);
+    color:#000;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 500;
+  }
+  .qty {
+    background-color: rgb(237, 226, 226);
+    color:#000;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+
+
+@media screen and (max-width: 480px) {
+/* Add these styles to your existing CSS file or create a new one */
+.nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  margin-left: 13px !important;
+  margin-right: 0px !important;
+text-decoration: none;
+font-size: 14px;
+}
+#profile {
+  margin-left: 10px !important;
+  margin-right: 0px !important;
+}
+
+
+
+    /* Show the menu button */
+    #menu{
+      display: block;
+  }
+
+  /* Hide the sidebar by default */
+  .sidebar {
+      display: none;
+  }
+
+ 
+  .sidebar.sidebar-visible {
+    height: 100vh !important;
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+  #filter-btn {
+    margin-top: 0px;
+  }
+  .nav-items a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+    .right {
+        width: 100%;
+    }
+
+    .items-cont {
+      grid-template-columns: repeat(1,1fr);
+    }
+    .btns {
+      padding: 2px 10px;
+    }
+    .sidebar h3 {
+      margin: 8px 0;
+  }
+  .range input {
+      margin: 8px 0;
+  }
+  #filter-btn {
+      margin-top: 10px;
+  }
+  }
